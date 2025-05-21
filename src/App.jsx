@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
 import { CORE_CONCEPTS } from './data.js';
 import { EXAMPLES } from './data-with-examples.js';
 import CoreConcept from './components/CoreConcept.jsx'
@@ -34,7 +34,7 @@ if (selectedTopic) {
 }
 
   return (
-    <div>
+    <Fragment>
       <Header />
       <main>
         <section id="core-concepts">
@@ -56,7 +56,7 @@ if (selectedTopic) {
           {tabContent}
         </section>
       </main>
-    </div>
+    </Fragment>
   );
 }
 
